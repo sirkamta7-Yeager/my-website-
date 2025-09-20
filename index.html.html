@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legit Properties Kenya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .property {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px 0;
+    }
+
+    .property img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+    }
+
+    form input, form textarea, form button {
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    button {
+      cursor: pointer;
+      background: #3498db;
+      border: none;
+      color: white;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Legit Properties Kenya</h1>
+    <p>Find your dream property today</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#listings">Listings</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to Legit Properties</h2>
+    <button id="showMessageBtn">Click Me</button>
+    <p id="message"></p>
+  </section>
+
+  <!-- Listings Section -->
+  <section id="listings">
+    <h2>Featured Listings</h2>
+    <div class="property">
+      <img src="images/download (1).jfif" alt="house for sale">
+      <h3>3 Bedroom House</h3>
+      <p>Ksh 7,500,000 - Nairobi</p>
+    </div>
+    <div class="property">
+      <img src="images/download (2).jfif" alt="Apartment">
+      <h3>Modern Apartment</h3>
+      <p>Ksh 4,200,000 - Mombasa</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We connect buyers with the best real estate deals in Kenya.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Legit Properties Kenya. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Example interactivity
+    document.getElementById("showMessageBtn").addEventListener("click", () => {
+      document.getElementById("message").textContent = 
+        "🏡 Explore our listings to find your dream home!";
+    });
+  </script>
+</body>
+</html>
