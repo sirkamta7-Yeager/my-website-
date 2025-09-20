@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head-section{
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+    
+        .nav-a{
+            color: white;
+             text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .listings-section{
+            display: grid;
+            grid-template-columns: 500px;
+            
+        }
+        footer{
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .form-section{
+          display: flex;
+          flex-direction: column;
+          max-width: 300px;
+          
+        }
+        form input, form textarea, form button {
+      margin: 10px 0;
+      padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="head-section">
+        <header>
+        <h1>Legit Properties Kenya</h1>
+        <p>find your dream property</p>
+       <div class="nav-a">
+         <nav>
+            <a href="#home">Home</a>
+            <a href="#listings">Listings</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+       </div>
+    </header>
+    </div>
+  <div class="home-section">
+      <section id="home">
+        <h2>Welcome To legit Properties</h2>
+        <p>Find Your Dream Property</p>
+        <button id="showMessageBtn">Click me</button>
+        <p id="message"></p>
+    </section>
+  </div>
+  
+  <div class="listings-section">
+    <section id="listings">
+    <h2> Featured listings</h2>
+    <div>
+       <img src="images/download (1).jfif" alt="house for sale">
+        <h3>4 Bedroom house</h3>
+        <p>50,000,000 - Nairobi Karen</p>
+      </div>
+      <div>
+        <img src="images/download (2).jfif" alt="house for sale">
+        <h3>6 Bedroom house</h3>
+        <p>100,000,000 - Nairobi Runda </p>
+      </div>
+  </section>
+
+  </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We connect buyers with the best real estate deals in Kenya</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="form-section">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your message"></textarea>
+        <button type="submit">send</button>
+    </form>
+
+    </div>
+    <footer>
+        <p>2025 Legit Properties Kenya. All rights reserved.</p>
+    </footer>
+  </section>
+    <script>
+   document.getElementById("showMessageBtn").addEventListener("click", () => {
+      document.getElementById("message").textContent = 
+        "🏡 Explore our listings to find your dream home!";
+    });
+    </script>
+</body>
+</html>
